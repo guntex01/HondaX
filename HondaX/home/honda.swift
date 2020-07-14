@@ -9,5 +9,5 @@
 import Foundation
 struct Honda {
     let imageName: String
-    let text: String
+    let textLB: String
 }

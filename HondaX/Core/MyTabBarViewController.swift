@@ -61,7 +61,7 @@ class MyTabBarViewController: UITabBarController {
         let myCarVC = MyCarViewController()
         myCarVC.view.backgroundColor = UIColor.white
         myCarVC.tabBarItem = UITabBarItem(title: "Xe của tôi", image: UIImage(named: "mycar"), tag: 1)
-        myCarVC.view.backgroundColor = .cyan
+        
         
         let homeVC = HomeViewController()
         homeVC.view.backgroundColor = .white

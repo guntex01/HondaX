@@ -26,9 +26,16 @@ class TopCollectionViewCell: UICollectionViewCell {
         }()
     let textLabel: UILabel = {
         let label = UILabel()
-        label.backgroundColor = .red
-        label.layer.cornerRadius = 20
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.layer.borderWidth = 1
+        label.layer.borderColor = UIColor.red.cgColor
+        label.layer.backgroundColor = UIColor.red.cgColor
+        label.layer.cornerRadius = 10
+        label.text = ""
         label.numberOfLines = 0
+        label.textColor = UIColor.white
+        label.textAlignment = .left
+        label.font = UIFont(name: "Arial", size: 16)
         return label
     }()
         func setupLayout(){
@@ -42,20 +49,21 @@ class TopCollectionViewCell: UICollectionViewCell {
         containerView.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
         
         photoImageView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 0).isActive = true
-        photoImageView.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 10).isActive = true
-        photoImageView.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -10).isActive = true
-        photoImageView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: 0).isActive = true
+        photoImageView.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 20).isActive = true
+        photoImageView.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -20).isActive = true
+        photoImageView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -30).isActive = true
              
-        textLabel.topAnchor.constraint(equalTo: photoImageView.topAnchor, constant: 100).isActive = true
-        textLabel.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 20).isActive = true
-        textLabel.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -20).isActive = true
+        textLabel.topAnchor.constraint(equalTo: photoImageView.bottomAnchor, constant:-30).isActive = true
+        textLabel.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 30).isActive = true
+        textLabel.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -30).isActive = true
+            textLabel.heightAnchor.constraint(equalToConstant: 60).isActive = true
             
     }
     var image: Honda?{
                 didSet{
                     if let home = image {
                         photoImageView.image = UIImage(named: home.imageName)
-                        textLabel.text = home.text
+                        textLabel.text = home.textLB
                     }
                 }
             }

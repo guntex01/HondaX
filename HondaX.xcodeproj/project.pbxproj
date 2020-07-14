@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		091D26CE2497272400F92265 /* TopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091D26CD2497272400F92265 /* TopCollectionViewCell.swift */; };
 		091D26D0249729EB00F92265 /* honda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091D26CF249729EB00F92265 /* honda.swift */; };
+		091D26D4249758FC00F92265 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091D26D3249758FB00F92265 /* NewsCollectionViewCell.swift */; };
+		091D26D62497591A00F92265 /* Promotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091D26D52497591A00F92265 /* Promotion.swift */; };
 		092327032490CB3700E9C962 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092327022490CB3700E9C962 /* AppDelegate.swift */; };
 		092327052490CB3700E9C962 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092327042490CB3700E9C962 /* SceneDelegate.swift */; };
 		092327072490CB3700E9C962 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092327062490CB3700E9C962 /* ViewController.swift */; };
@@ -29,11 +31,14 @@
 		09548AB02491D7C800ACF0DD /*  Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09548AAF2491D7C800ACF0DD /*  Motorcycle.swift */; };
 		09548AB22491F24500ACF0DD /* BottomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09548AB12491F24500ACF0DD /* BottomCollectionViewCell.swift */; };
 		09548AB42491F25300ACF0DD /* Oto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09548AB32491F25300ACF0DD /* Oto.swift */; };
+		0990D702249C6C6000F026EF /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0990D701249C6C6000F026EF /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		091D26CD2497272400F92265 /* TopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCollectionViewCell.swift; sourceTree = "<group>"; };
 		091D26CF249729EB00F92265 /* honda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = honda.swift; sourceTree = "<group>"; };
+		091D26D3249758FB00F92265 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		091D26D52497591A00F92265 /* Promotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promotion.swift; sourceTree = "<group>"; };
 		092326FF2490CB3700E9C962 /* HondaX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HondaX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		092327022490CB3700E9C962 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		092327042490CB3700E9C962 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +61,7 @@
 		09548AAF2491D7C800ACF0DD /*  Motorcycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Motorcycle.swift"; sourceTree = "<group>"; };
 		09548AB12491F24500ACF0DD /* BottomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCollectionViewCell.swift; sourceTree = "<group>"; };
 		09548AB32491F25300ACF0DD /* Oto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oto.swift; sourceTree = "<group>"; };
+		0990D701249C6C6000F026EF /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +80,17 @@
 			children = (
 				091D26CD2497272400F92265 /* TopCollectionViewCell.swift */,
 				091D26CF249729EB00F92265 /* honda.swift */,
+				091D26D3249758FB00F92265 /* NewsCollectionViewCell.swift */,
+				091D26D52497591A00F92265 /* Promotion.swift */,
 			);
 			path = home;
+			sourceTree = "<group>";
+		};
+		091D26D724976B6800F92265 /* My car */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "My car";
 			sourceTree = "<group>";
 		};
 		092326F62490CB3700E9C962 = {
@@ -97,12 +112,14 @@
 		092327012490CB3700E9C962 /* HondaX */ = {
 			isa = PBXGroup;
 			children = (
+				091D26D724976B6800F92265 /* My car */,
 				0923271F2490CBB500E9C962 /* ControllerInNavigationBar */,
 				092327162490CBB500E9C962 /* ControllerInTabBar */,
 				0923271B2490CBB500E9C962 /* Core */,
 				09548AAC2491D73800ACF0DD /* Product */,
 				091D26CC2497270300F92265 /* home */,
 				092327062490CB3700E9C962 /* ViewController.swift */,
+				0990D701249C6C6000F026EF /* CustomTableViewCell.swift */,
 				092327082490CB3700E9C962 /* Main.storyboard */,
 				0923270B2490CB3900E9C962 /* Assets.xcassets */,
 				0923270D2490CB3900E9C962 /* LaunchScreen.storyboard */,
@@ -228,12 +245,14 @@
 			files = (
 				091D26CE2497272400F92265 /* TopCollectionViewCell.swift in Sources */,
 				0939D89E2490E6250087870F /* imageHonda.swift in Sources */,
+				0990D702249C6C6000F026EF /* CustomTableViewCell.swift in Sources */,
 				09548AB02491D7C800ACF0DD /*  Motorcycle.swift in Sources */,
 				09548AAE2491D78800ACF0DD /* CenterCollectionViewCell.swift in Sources */,
 				092327262490CBB500E9C962 /* MyTabBarViewController.swift in Sources */,
 				092327072490CB3700E9C962 /* ViewController.swift in Sources */,
 				0939D89C2490E3260087870F /* MyCollectionViewCell.swift in Sources */,
 				09548AB42491F25300ACF0DD /* Oto.swift in Sources */,
+				091D26D62497591A00F92265 /* Promotion.swift in Sources */,
 				09548AB22491F24500ACF0DD /* BottomCollectionViewCell.swift in Sources */,
 				092327032490CB3700E9C962 /* AppDelegate.swift in Sources */,
 				092327052490CB3700E9C962 /* SceneDelegate.swift in Sources */,
@@ -245,6 +264,7 @@
 				092327242490CBB500E9C962 /* HomeViewController.swift in Sources */,
 				093381EB24933CF800054B8B /* SectionCollectionViewCell.swift in Sources */,
 				092327292490CBB500E9C962 /* AccountViewController.swift in Sources */,
+				091D26D4249758FC00F92265 /* NewsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
